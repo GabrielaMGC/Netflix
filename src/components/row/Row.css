@@ -1,17 +1,37 @@
 .row-container{
-    margin-left: 30px;
-    color: #fff;
+    margin-left: 20px;
+    color:#fff;
 }
-
 .row-cards{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
 }
-
-.movie-card{
+.row-cards::-webkit-scrollbar{
+    display: none;
+}
+.movie-image{
+    object-fit: contain;
     width: 100%;
-    max-height: 100%;
+    max-height: 250px;
     margin-bottom: 10px;
+    transition: transform 450ms;
+}
+.movie-image-large{
+    object-fit: contain;
+    width: 100%;
+    max-height: 500px;
+    margin-bottom: 10px;
+    transition: transform 450ms;
+}
+.movie-image:hover{
+    transform: scale(1.08);
+}
+*{
+    margin:0
+}
+
+body{
+    background-color: black;
 }
