@@ -1,6 +1,7 @@
 import './App.css';
 import { categories } from './Api';
 import {Row} from '../src/components/row/Row'
+import Banner from '../src/components/row/banner/banner'
 
 function App() {
   return (
